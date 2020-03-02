@@ -128,7 +128,7 @@ const fetchTask = async key => {
     console.log(chalk.green(`${exercises[taskCount].task}`));
     console.log();
 
-    let createCmd = process.platform !== 'win32' ? 'touch' : 'notepad';
+    let createCmd = process.platform !== 'win32' ? 'touch' : 'code';
     execSync(`${createCmd} ${fileName}`);
   }
 };
